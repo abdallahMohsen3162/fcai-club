@@ -1,0 +1,100 @@
+.profile {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.profile h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.profile p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.profile strong {
+  font-weight: bold;
+  color: #000;
+}
+
+.profile img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.edit input[type="text"],
+.edit input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit button:hover {
+  background-color: #0056b3;
+}
+@keyframes spinning {
+  0%{
+    transform: rotate(0deg);
+  }100%{
+    transform: rotate(360deg);
+  }
+}
+.loading-white{
+  border-color:white ;
+  border-bottom-color: transparent;
+}
+
+
+.show{
+  padding: 10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.accepted{
+  color: green;
+  text-align: center;
+}
+.rejected{
+  color: red;
+  text-align: center;
+}
+

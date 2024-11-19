@@ -1,0 +1,36 @@
+.register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.register input{
+  margin: 10px;
+  width: 300px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+.input-file{
+  margin: 10px;
+  width: 300px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  
+}
+
+
+
+.error{
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}

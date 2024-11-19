@@ -1,0 +1,177 @@
+:root{
+  --dark-color:#6f42c1;
+  --light-color:#d63384;
+  --white-color:#e2e8f0;
+  --black-color:#0f172a;
+}
+
+body {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/prompt-397314.appspot.com/o/media%2Fmedia%2Fth.jpeg?alt=media&token=0e0ecba3-58f8-4a88-9d2e-8b1f9c9f597c");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+*::selection{
+  background-color: var(--dark-color);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body{
+  display: flex;
+}
+
+.timeline{
+  overflow: auto;
+  width: calc(100% - 50px);
+  margin-left: auto;
+}
+/* navbar.module.css */
+
+.sidebar {
+  height: 100vh; /* Full height */
+  width: 50px; /* Sidebar width */
+  position: fixed; /* Fix the sidebar to the left */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  background-color: #111; /* Background color */
+  padding-top: 20px; /* Padding from the top */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.sidebar-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  width: 100%;
+}
+
+.sidebar-item {
+  padding: 8px 16px; /* Add some padding */
+  text-align: left; /* Align text to the left */
+  text-align: center;
+}
+
+.sidebar-item a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make links block elements */
+}
+
+
+.btn{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-login,
+.btn-logout{
+  background-color: var(--light-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+@keyframes spinning {
+  0%{
+    transform: rotate(0deg);
+  }100%{
+    transform: rotate(360deg);
+  }
+}
+.spinner{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid black;
+  border-bottom-color:transparent ;
+  animation: spinning 1s infinite linear;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+h4 {
+  text-align: center;
+  color: #d9534f; /* Red color for emphasis */
+}
+
+p {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+strong {
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.no-posts {
+  text-align: center;
+  color: #888;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h4 {
+    font-size: 16px;
+  }
+}
+
+.user-img{
+  max-width: 60px;
+  position: absolute;
+  right: 0px;
+  top:-10px;
+  z-index: 1000;
+}
+
+.center{
+  margin: auto;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+}
+
+.header{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
